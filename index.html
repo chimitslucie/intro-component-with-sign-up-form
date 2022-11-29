@@ -1,15 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="left">
+            <div class="left__content">
+                <h1 class="left__title">Learn to code by watching others</h1>
+                <p class="left__text">
+                    See how experienced developers solve problems in real-time.
+                    Watching scripted tutorials is great, but understanding how
+                    developers think is invaluable.
+                </p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="subscription">
+                <p class="subscription__text">
+                    <span class="subscription__span">Try it free 7 days</span>
+                    then $20/mo. thereafter
+                </p>
+            </div>
+            <form action="" method="get" class="form">
+                <div class="form-group">
+                    <div class="form-party">
+                        <input
+                            type="text"
+                            name="first-name"
+                            id="first-name"
+                            placeholder="First Name"
+                            class="form-control form-firstname"
+                        />
+                        <img
+                            src="./img/icon-error.svg"
+                            alt="icon-error"
+                            class="icon icon-firstname"
+                        />
+                        <p class="error-text error-firstname">
+                            First Name cannot be empty
+                        </p>
+                    </div>
+                    <div class="form-party">
+                        <input
+                            type="text"
+                            name="last-name"
+                            id="last-name"
+                            placeholder="Last Name"
+                            class="form-control form-lastname"
+                        />
+                        <img
+                            src="./img/icon-error.svg"
+                            alt="icon-error"
+                            class="icon icon-lastname"
+                        />
+                        <p class="error-text error-lastname">
+                            Last Name cannot be empty
+                        </p>
+                    </div>
+                    <div class="form-party">
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Email Address"
+                            class="form-control form-email"
+                        />
+                        <img
+                            src="./img/icon-error.svg"
+                            alt="icon-error"
+                            class="icon icon-email"
+                        />
+                        <p class="error-text error-email">
+                            Looks like this is not an email
+                        </p>
+                    </div>
+                    <div class="form-party">
+                        <input
+                            type="password"
+                            name="password"
+                            id="password"
+                            placeholder="Password"
+                            class="form-control form-password"
+                        />
+                        <img
+                            src="./img/icon-error.svg"
+                            alt="icon-error"
+                            class="icon icon-password"
+                        />
+                        <p class="error-text error-password">
+                            Password cannot be empty
+                        </p>
+                    </div>
+                </div>
+                <button type="button" class="request__btn">
+                    Claim your free trial
+                </button>
+                <p class="form__text">
+                    By clicking the button, you are agreeing to our
+                    <span class="text__span">Terms and Services</span>
+                </p>
+            </form>
+        </div>
 
-    <script src="./js/main.js"></script>
-</body>
+        <script src="./js/main.js"></script>
+    </body>
 </html>

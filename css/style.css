@@ -6,6 +6,9 @@
     --blue: #5e54a4;
     --dark-blue: #3d3b48;
     --grayish-blue: #bab7d4;
+    --white: #ffffff;
+    --border: #dedede;
+    --btn-hover: #77e2b3;
 }
 
 * {
@@ -28,4 +31,181 @@ body {
 body {
     width: 100vw;
     height: 100vh;
+    background: url(../img/bg-intro-desktop.png) var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left__content {
+    max-width: 525px;
+    width: 100%;
+    margin-right: 45px;
+}
+
+.left__title {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 55px;
+    letter-spacing: -0.52px;
+}
+
+.left__text {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 26px;
+}
+
+.subscription {
+    max-width: 540px;
+    width: 100%;
+    background-color: var(--blue);
+    border-radius: 10px;
+    text-align: center;
+    padding: 17px 0;
+    filter: drop-shadow(0 8px 0 rgba(0, 0, 0, 0.14));
+}
+
+.subscription__text {
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.27px;
+}
+
+.subscription__span {
+    font-weight: 700;
+}
+
+.form {
+    max-width: 540px;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 10px;
+    filter: drop-shadow(0 8px 0 rgba(0, 0, 0, 0.14));
+    margin-top: 24px;
+    padding: 40px 40px;
+}
+
+.form-party {
+    position: relative;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px 7px 15px 32px;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    margin-bottom: 42px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+    color: var(--dark-blue);
+}
+
+.form-control:focus {
+    outline: none;
+    border: 1px solid var(--blue);
+}
+
+.icon {
+    width: 24px;
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 7px;
+}
+
+.error-text {
+    display: none;
+    font-weight: 500;
+    font-size: 11px;
+    color: var(--red);
+    margin-top: 6px;
+    position: absolute;
+    top: 58px;
+    right: 0;
+}
+
+.request__btn {
+    width: 100%;
+    padding: 15px 0;
+    background-color: var(--green);
+    border: none;
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.request__btn:hover {
+    background-color: var(--btn-hover);
+}
+
+.form__text {
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 26px;
+    color: var(--grayish-blue);
+    text-align: center;
+}
+
+.text__span {
+    font-weight: 700;
+    color: var(--red);
+}
+
+@media (max-width: 375px) {
+    body {
+        flex-direction: column;
+        background: url(../img/bg-intro-mobile.png) var(--red);
+        padding: 88px 24px 68px 24px;
+        height: 100%;
+    }
+
+    .left__content {
+        max-width: 327pxs;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .left__title {
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: -0.29px;
+    }
+
+    .left__text {
+        margin-top: 16px;
+    }
+
+    .subscription {
+        max-width: 327px;
+        padding: 18px 66px;
+        margin-top: 64px;
+    }
+
+    .form {
+        max-width: 327px;
+        padding: 24px 24px;
+    }
+
+    .form-control {
+        padding: 15px 7px 15px 19px;
+        margin-bottom: 16px;
+    }
+
+    .error-text {
+        margin-top: -2px;
+    }
 }
