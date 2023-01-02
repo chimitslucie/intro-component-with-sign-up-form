@@ -100,12 +100,16 @@ body {
     padding: 15px 7px 15px 32px;
     border-radius: 5px;
     border: 1px solid var(--border);
-    margin-bottom: 42px;
+    margin-bottom: 20px;
     font-size: 14px;
     font-weight: 600;
     line-height: 26px;
     letter-spacing: 0.25px;
     color: var(--dark-blue);
+}
+
+.form-control.in-error {
+    margin-bottom: 0;
 }
 
 .form-control:focus {
@@ -126,10 +130,9 @@ body {
     font-weight: 500;
     font-size: 11px;
     color: var(--red);
-    margin-top: 6px;
-    position: absolute;
-    top: 58px;
-    right: 0;
+    margin-top: 5px;
+    text-align: right;
+    margin-bottom: 20px;
 }
 
 .request__btn {
@@ -203,9 +206,5 @@ body {
     .form-control {
         padding: 15px 7px 15px 19px;
         margin-bottom: 16px;
-    }
-
-    .error-text {
-        margin-top: -2px;
     }
 }
